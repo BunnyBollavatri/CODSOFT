@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ca6702;
+    text-decoration-line: underline;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.about-container, .experience-container, .projects-container, .contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 50%;
+    max-width: 300px;
+    margin-left: 20px;
+}
+
+.about-content, .experience-content, .projects-content, .contact-content {
+    margin-left: 40px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background: #51c1af;
+}
+
+.about-content p, .experience-content p, .projects-content p, .contact-content p, .projects-content ul {
+    font-size: 1rem;
+    color: #666;
+    padding-bottom: 20px;
+}
+
+.projects-content ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.hello {
+    padding: 1rem 2rem;
+    font-weight: 500;
+    position: absolute;
+    top: 110px;
+    right: 180px;
+    margin: 20px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.text {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.buttons .btn {
+    padding: 10px 20px;
+    background: #51c1af;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.buttons .btn:hover {
+    background: #419e8a;
+}
+
+#mail {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#gmail {
+    text-decoration: underline;
+    font-size: medium;
+    color: #0045f4;
+    justify-content: flex-end;
+}
